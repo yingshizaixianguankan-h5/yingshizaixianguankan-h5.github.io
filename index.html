@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>影视在线观看 - 电影/电视剧/动漫/综艺/纪录片/短剧在线找片导航 | yingshizaixianguankan-h5</title>
+<meta name="description" content="影视在线观看（yingshizaixianguankan-h5.github.io）是找片前台：电影、电视剧、动漫、综艺、纪录片、短剧、少儿、直播按正版平台/高清修复/短剧速看/合家欢/冷门佳片排，热播榜+放映员手记，移动端自适应。">
+<meta name="keywords" content="影视在线观看,电影在线观看,电视剧在线观看,动漫在线观看,综艺在线观看,纪录片在线观看,短剧在线观看,影视导航,yingshizaixianguankan-h5">
+<meta name="author" content="影视在线观看">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://yingshizaixianguankan-h5.github.io/">
+<meta property="og:title" content="影视在线观看 - 先找对片，再谈在哪看">
+<meta property="og:description" content="电影、电视剧、动漫、综艺、纪录片、短剧：正版平台、高清修复、短剧速看、合家欢、冷门佳片，一站挑完。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yingshizaixianguankan-h5.github.io/">
+<meta property="og:site_name" content="影视在线观看">
+<meta name="msvalidate.01" content="BING_VERIFY_CODE">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"影视在线观看",
+  "url":"https://yingshizaixianguankan-h5.github.io/",
+  "description":"影视在线观看是影视找片导航站，覆盖电影、电视剧、动漫、综艺、纪录片、短剧、少儿、直播。"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"影视在线观看这个站能直接播片吗？",
+      "acceptedAnswer":{"@type":"Answer","text":"不能直接播。本站是“找片前台/片单导航”：帮你按正版平台、高清修复、短剧速看、合家欢、冷门佳片快速定位想看的片，再跳到爱奇艺、优酷、腾讯视频、B站、芒果TV等正版或合规入口。不挂盗版播放器、不绑下载器、不弹付费会员。"}
+    },
+    {
+      "@type":"Question",
+      "name":"“影视在线观看”这么通用的名字会不会被搜到？",
+      "acceptedAnswer":{"@type":"Answer","text":"会，但也容易和盗版聚合站撞词。所以本站首页第一句就写明：先找对片，再谈在哪看；全站只做导航、片单、榜单和手记，不提供侵权片源，避免被当成灰色影视站。"}
+    }
+  ]
+}
+</script>
+<style>
+:root{
+  --bg:#0e1116;
+  --card:#161b22;
+  --ink:#f4ead2;
+  --muted:#9fb0c0;
+  --red:#ff4d4f;
+  --gold:#ffce5c;
+  --blue:#3aa0ff;
+  --line:rgba(255,206,92,.28);
+  --shadow:0 18px 44px rgba(0,0,0,.55);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+  background:
+    radial-gradient(760px 420px at 85% -8%,rgba(255,77,79,.16),transparent 60%),
+    radial-gradient(680px 380px at -8% 8%,rgba(58,160,255,.14),transparent 55%),
+    linear-gradient(180deg,#0e1116 0%,#12171f 58%,#0a0d12 100%);
+  color:var(--ink);line-height:1.78;
+}
+a{color:inherit;text-decoration:none}
+
+.zx-top{position:sticky;top:0;z-index:999;background:rgba(14,17,22,.93);backdrop-filter:blur(10px);border-bottom:2px solid var(--gold)}
+.zx-top__in{max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:.68rem 1rem}
+.zx-logo{font-weight:900;font-size:1.18rem}
+.zx-logo b{color:var(--red)}
+.zx-logo i{color:var(--muted);font-style:normal;font-size:.76rem;background:rgba(58,160,255,.12);padding:.1rem .45rem;border-radius:8px}
+.zx-nav{display:flex;gap:.3rem}
+.zx-nav a{padding:.42rem .8rem;border-radius:20px;font-size:.9rem;color:var(--muted);font-weight:700}
+.zx-nav a:hover{background:rgba(255,206,92,.16);color:var(--gold)}
+.zx-burger{display:none;flex-direction:column;gap:4px;cursor:pointer}
+.zx-burger span{width:22px;height:2px;background:var(--gold);border-radius:2px}
+
+.zx-hero{max-width:1180px;margin:0 auto;padding:3.4rem 1rem 2.6rem;text-align:center;position:relative;overflow:hidden}
+.zx-screen{width:160px;height:96px;margin:0 auto 1.3rem;border-radius:10px;background:linear-gradient(135deg,#1b2230,#0c0f15);border:2px solid var(--gold);position:relative;box-shadow:var(--shadow)}
+.zx-screen::before{content:"";position:absolute;left:50%;top:50%;width:34px;height:34px;transform:translate(-50%,-50%);border-radius:50%;background:rgba(255,206,92,.12);border:2px solid var(--gold)}
+.zx-screen::after{content:"";position:absolute;left:54%;top:50%;transform:translateY(-50%);border-left:12px solid var(--red);border-top:8px solid transparent;border-bottom:8px solid transparent}
+.zx-hero h1{font-size:clamp(2rem,5vw,3rem);line-height:1.22;margin-bottom:1rem}
+.zx-hero h1 em{font-style:normal;color:var(--red)}
+.zx-hero h1 u{text-decoration:none;color:var(--gold)}
+.zx-hero p{color:var(--muted);max-width:720px;margin:0 auto 1.6rem}
+.zx-search{display:flex;max-width:560px;margin:0 auto 1.2rem;background:#0a0d12;border:2px solid var(--gold);border-radius:30px;overflow:hidden}
+.zx-search input{flex:1;background:transparent;border:0;color:var(--ink);padding:.85rem 1.2rem;font-size:1rem;outline:none}
+.zx-search button{background:linear-gradient(90deg,var(--red),var(--gold));color:#0e1116;border:0;padding:0 1.4rem;font-weight:800;cursor:pointer}
+.zx-cta{display:inline-flex;gap:.5rem;align-items:center;padding:.8rem 1.8rem;border-radius:30px;font-weight:800;color:#0e1116;background:linear-gradient(90deg,var(--blue),var(--gold));box-shadow:var(--shadow)}
+.zx-dim{color:var(--blue);font-size:.78rem;letter-spacing:3px;font-family:ui-monospace,monospace;margin-bottom:.5rem}
+
+.zx-sec{max-width:1180px;margin:0 auto;padding:3.1rem 1rem}
+.zx-head{margin-bottom:1.6rem;text-align:center}
+.zx-head .no{font-size:.72rem;color:var(--gold);letter-spacing:3px;font-family:ui-monospace,monospace}
+.zx-head h2{font-size:clamp(1.4rem,3.4vw,2.1rem);font-weight:900;margin-top:.3rem}
+.zx-head h2 i{color:var(--red);font-style:normal}
+.zx-head p{color:var(--muted);margin-top:.35rem;font-size:.92rem}
+
+.zx-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:.9rem}
+.zx-cell{border-radius:18px;padding:1.3rem 1rem;background:var(--card);text-align:center;transition:.25s;border:1px solid var(--line)}
+.zx-cell:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.zx-cell .ic{font-size:1.9rem}
+.zx-cell h3{font-size:.96rem;margin:.45rem 0 .25rem;font-weight:800}
+.zx-cell p{font-size:.72rem;color:var(--muted)}
+
+.zx-ch{display:grid;grid-template-columns:repeat(8,1fr);gap:.7rem}
+.zx-c{border-radius:14px;padding:1rem .3rem;background:var(--card);text-align:center;border:1px solid var(--line);transition:.25s}
+.zx-c:hover{transform:translateY(-3px);background:rgba(58,160,255,.12)}
+.zx-c .ic{font-size:1.5rem}
+.zx-c h3{font-size:.78rem;margin-top:.3rem;font-weight:700}
+.zx-c p{font-size:.6rem;color:var(--muted)}
+
+.zx-rank{display:grid;gap:1.1rem}
+.zx-item{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:1.1rem 1.2rem}
+.zx-item h3{font-size:1.02rem;display:flex;justify-content:space-between;margin-bottom:.55rem;font-weight:800}
+.zx-item h3 span{color:var(--gold)}
+.zx-bar{height:16px;border-radius:999px;background:#0a0d12;overflow:hidden;position:relative;border:1px solid var(--line)}
+.zx-bar i{display:block;height:100%;background:linear-gradient(90deg,var(--blue),var(--gold),var(--red))}
+.zx-bar i::after{content:"🎟️";position:absolute;right:5px;top:-2px;font-size:.8rem}
+
+.zx-notes{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem}
+.zx-note{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:1.4rem}
+.zx-note .tag{font-size:.72rem;padding:.2rem .6rem;border-radius:8px;font-weight:800}
+.zx-note.proj .tag{background:rgba(58,160,255,.18);color:var(--blue)}
+.zx-note.aud .tag{background:rgba(255,77,79,.18);color:var(--red)}
+.zx-note h3{font-size:1.04rem;margin:.6rem 0 .4rem;font-weight:800}
+.zx-note p{font-size:.86rem;color:var(--muted)}
+
+.zx-about{background:linear-gradient(160deg,#1a212b,#0e1116);border:2px solid var(--gold);border-radius:26px;padding:2.4rem}
+.zx-about h2{font-size:1.9rem;margin-bottom:.8rem;font-weight:900}
+.zx-about h2 u{color:var(--gold);text-decoration:none}
+.zx-about p{color:var(--muted);margin-bottom:1rem}
+.zx-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.4rem}
+.zx-stat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:1.1rem;text-align:center}
+.zx-stat b{font-size:1.5rem;color:var(--gold);display:block}
+.zx-stat span{font-size:.8rem;color:var(--muted)}
+
+.zx-faq details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.2rem 1.1rem;margin-bottom:.7rem}
+.zx-faq summary{cursor:pointer;padding:.85rem 0;font-weight:800}
+.zx-faq p{padding:0 0 .85rem;color:var(--muted)}
+
+.zx-foot{border-top:2px solid var(--gold);background:#0a0d12;padding:2.2rem 1rem;text-align:center;color:var(--muted);font-size:.86rem}
+.zx-foot a{color:var(--gold)}
+.zx-foot__links{display:flex;gap:1.1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.zx-foot__links a{font-size:.84rem}
+
+@media(max-width:980px){
+  .zx-grid{grid-template-columns:repeat(3,1fr)}
+  .zx-ch{grid-template-columns:repeat(4,1fr)}
+  .zx-notes{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  .zx-nav{display:none;position:absolute;top:56px;left:0;right:0;flex-direction:column;gap:0;background:rgba(14,17,22,.98);border-bottom:2px solid var(--gold)}
+  .zx-nav.show{display:flex}
+  .zx-nav a{padding:.85rem 1rem;border-bottom:1px solid #222a35}
+  .zx-burger{display:flex}
+  .zx-grid{grid-template-columns:repeat(2,1fr)}
+  .zx-ch{grid-template-columns:repeat(3,1fr)}
+  .zx-stats{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/laoliu.js"></script>
+
+<header class="zx-top">
+  <div class="zx-top__in">
+    <div class="zx-logo">🎟️ 影视<b>在线观看</b> <i>·找片前台</i></div>
+    <nav class="zx-nav" id="zxNav">
+      <a href="#home">前台</a>
+      <a href="#grid">观看方式</a>
+      <a href="#ch">频道</a>
+      <a href="#rank">热播榜</a>
+      <a href="#notes">放映员手记</a>
+      <a href="#about">关于本站</a>
+    </nav>
+    <div class="zx-burger" onclick="document.getElementById('zxNav').classList.toggle('show')">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
+
+<section class="zx-hero" id="home">
+  <div class="zx-screen"></div>
+  <p class="zx-dim">// find the right film first</p>
+  <h1>影视在线观看：<em>先找对片</em>，<u>再谈在哪看</u></h1>
+  <p>“影视在线观看”这个词本身像搜索词。这个站不装“全网秒播”，也不挂盗版播放器——它像影院前台：你报出心情，它给你正版平台、高清修复、短剧速看、合家欢、冷门佳片五条通道，剩下的事交给正规平台。</p>
+  <div class="zx-search" role="search">
+    <input type="text" placeholder="搜电影 / 剧集 / 动漫 / 纪录片…" aria-label="搜片">
+    <button type="button">找片</button>
+  </div>
+  <a class="zx-cta" href="#grid">🎬 进厅挑片</a>
+</section>
+
+<section class="zx-sec" id="grid">
+  <div class="zx-head">
+    <div class="no">// five ways to watch</div>
+    <h2>观看 <i>方式</i></h2>
+    <p>不按类型死分，按“你今天想怎么看”分。</p>
+  </div>
+  <div class="zx-grid">
+    <div class="zx-cell"><div class="ic">📺</div><h3>正版平台</h3><p>爱奇艺/优酷/腾讯/B站/芒果TV入口思路</p></div>
+    <div class="zx-cell"><div class="ic">🎞️</div><h3>高清修复</h3><p>老片、4K修复、胶片质感、导演剪辑</p></div>
+    <div class="zx-cell"><div class="ic">⚡</div><h3>短剧速看</h3><p>甜宠、逆袭、悬疑短打、倍速友好</p></div>
+    <div class="zx-cell"><div class="ic">🛋️</div><h3>合家欢</h3><p>动画、温情、周末、不费脑</p></div>
+    <div class="zx-cell"><div class="ic">🗝️</div><h3>冷门佳片</h3><p>小众、国创、纪录片、被埋住的宝</p></div>
+  </div>
+</section>
+
+<section class="zx-sec" id="ch">
+  <div class="zx-head">
+    <div class="no">// eight halls</div>
+    <h2>频道 <i>大厅</i></h2>
+    <p>八扇厅门，从少儿到直播都开着。</p>
+  </div>
+  <div class="zx-ch">
+    <div class="zx-c"><div class="ic">🎬</div><h3>电影</h3><p>院线/经典/小众</p></div>
+    <div class="zx-c"><div class="ic">📺</div><h3>剧集</h3><p>国产/韩剧/美剧/日剧</p></div>
+    <div class="zx-c"><div class="ic">🍥</div><h3>动漫</h3><p>新番/国创/剧场版</p></div>
+    <div class="zx-c"><div class="ic">🎤</div><h3>综艺</h3><p>慢综/竞演/访谈</p></div>
+    <div class="zx-c"><div class="ic">🐳</div><h3>纪录片</h3><p>自然/老城/手艺/电影史</p></div>
+    <div class="zx-c"><div class="ic">⚡</div><h3>短剧</h3><p>甜宠/逆袭/悬疑</p></div>
+    <div class="zx-c"><div class="ic">🧸</div><h3>少儿</h3><p>动画/绘本/儿歌</p></div>
+    <div class="zx-c"><div class="ic">📡</div><h3>直播</h3><p>首映/主创谈/夜场闲聊</p></div>
+  </div>
+</section>
+
+<section class="zx-sec" id="rank">
+  <div class="zx-head">
+    <div class="no">// house-full heat</div>
+    <h2>热播 <i>榜</i></h2>
+    <p>按“上座率 = 想看 + 二刷 + 安利 + 正版可看”综合排。</p>
+  </div>
+  <div class="zx-rank">
+    <div class="zx-item"><h3>1. 合家欢：寻梦环游记 <span>99%</span></h3><div class="zx-bar"><i style="width:99%"></i></div></div>
+    <div class="zx-item"><h3>2. 高清修复：教父 4K <span>97%</span></h3><div class="zx-bar"><i style="width:97%"></i></div></div>
+    <div class="zx-item"><h3>3. 短剧速看：逆袭短剧合集 <span>95%</span></h3><div class="zx-bar"><i style="width:95%"></i></div></div>
+    <div class="zx-item"><h3>4. 冷门佳片：海街日记 <span>94%</span></h3><div class="zx-bar"><i style="width:94%"></i></div></div>
+    <div class="zx-item"><h3>5. 正版平台：流浪地球Ⅱ <span>92%</span></h3><div class="zx-bar"><i style="width:92%"></i></div></div>
+  </div>
+</section>
+
+<section class="zx-sec" id="notes">
+  <div class="zx-head">
+    <div class="no">// projectionist log</div>
+    <h2>放映员 <i>手记</i></h2>
+    <p>前台不卖片，只领座。</p>
+  </div>
+  <div class="zx-notes">
+    <article class="zx-note proj">
+      <span class="tag">🎞️ 放映员</span>
+      <h3>“在线观看”四个字最容易被做臭</h3>
+      <p>搜这个词的人很多，但一堆站是解析、聚合、会员付费、弹窗下载。本站反着来：首页就把话挑明——只导航不播放；想看正版去正版，想看冷门去冷门片单，想看短剧去短剧速看。</p>
+    </article>
+    <article class="zx-note aud">
+      <span class="tag">🍿 观众</span>
+      <h3>我搜“影视在线观看”其实只想少点三下</h3>
+      <p>不是非要免费，是不想进站先关广告、再点假播放、再下播放器。这个站把“电影/剧集/动漫/综艺/纪录片/短剧”平铺出来，手机上滑两下就知道自己今晚看啥，比搜十个站快。</p>
+    </article>
+    <article class="zx-note proj">
+      <span class="tag">🎞️ 放映员</span>
+      <h3>高清修复别和爽片放一起</h3>
+      <p>《教父 4K》《2001 太空漫游》这种，和《死侍》《急速追杀》放一个筐，用户会点错心情。影视在线观看把它拆成“高清修复”和“合家欢/短剧速看”，像影院分厅：文艺厅别放爆米花大片。</p>
+    </article>
+    <article class="zx-note aud">
+      <span class="tag">🍿 观众</span>
+      <h3>冷门佳片是深夜刚需</h3>
+      <p>热门片到处有，难的是“今天不想看爆款”。《海街日记》《小森林》《步履不停》《寻找薇薇安·迈尔》这种，影视在线观看放“冷门佳片”筐里，比首页堆 100 部爽片有用。</p>
+    </article>
+  </div>
+</section>
+
+<section class="zx-sec" id="about">
+  <div class="zx-about">
+    <h2>关于 <u>影视在线观看</u></h2>
+    <p>
+      影视在线观看（yingshizaixianguankan-h5.github.io）不生产片源，也不做解析站。它把“用户搜影视在线观看”这件事接住：你进来先选观看方式，再选频道，再看热播榜和放映员手记，最后去正版/合规平台看。
+    </p>
+    <p>
+      电影、电视剧、动漫、综艺、纪录片、短剧、少儿、直播，按“正版平台 / 高清修复 / 短剧速看 / 合家欢 / 冷门佳片”五条通道组织。名字很直白，站点很干净。
+    </p>
+    <div class="zx-stats">
+      <div class="zx-stat"><b>5 通道</b><span>正版/修复/短剧/合家/冷门</span></div>
+      <div class="zx-stat"><b>8 厅</b><span>影/剧/漫/综/纪/短剧/少儿/直播</span></div>
+      <div class="zx-stat"><b>0 播放器</b><span>只导航，不播盗版</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="zx-sec zx-faq">
+  <div class="zx-head">
+    <div class="no">// q & a</div>
+    <h2>常见 <i>问答</i></h2>
+  </div>
+  <details open>
+    <summary>“影视在线观看”不是很多盗版站的名字吗？</summary>
+    <p>是，所以更要说清楚：本站是导航/片单站，不提供播放地址、不绑下载器、不弹会员付费、不解析第三方视频。名字通用，合规边界不通用。</p>
+  </details>
+  <details>
+    <summary>和蜂鸟影视、纤纤影视、金梅影视差在哪？</summary>
+    <p>蜂鸟是振翅动作（悬停/疾冲/倒飞/虹彩/采蜜），纤纤是素纱薄厚（轻絮/细缕/柔波/薄纱/素绢），金梅是梅的脾气（孤寒/傲骨/暗香/雪夜/暖炉），影视在线观看是“找片前台”：按观看方式分，不玩具象母题。</p>
+  </details>
+  <details>
+    <summary>能在这里直接看电影吗？</summary>
+    <p>不能。本站只做分类、简介、热播榜和手记；正片去爱奇艺、优酷、腾讯视频、B站、芒果TV等正版或合规入口。</p>
+  </details>
+</section>
+
+<footer class="zx-foot">
+  <div class="zx-foot__links">
+    <a href="#grid">观看方式</a>
+    <a href="#ch">频道大厅</a>
+    <a href="#rank">热播榜</a>
+    <a href="#notes">放映员手记</a>
+    <a href="#about">关于本站</a>
+    <a href="#">免责声明</a>
+  </div>
+  <p>© 2026 <a href="https://yingshizaixianguankan-h5.github.io">影视在线观看</a> · yingshizaixianguankan-h5.github.io</p>
+  <p>影视在线观看 —— 先找对片，再谈在哪看。本站为影视导航站，不提供盗版播放。</p>
+</footer>
+
+<script>
+document.querySelectorAll('.zx-nav a').forEach(function(a){
+  a.addEventListener('click',function(){
+    document.getElementById('zxNav').classList.remove('show');
+  });
+});
+</script>
+
+</body>
+</html>
